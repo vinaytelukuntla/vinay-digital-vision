@@ -4,7 +4,7 @@ import heroPortrait from "@/assets/hero-portrait.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-hero overflow-hidden pt-16">
       {/* Animated background elements */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-10 w-72 h-72 bg-accent rounded-full blur-3xl animate-float" />
@@ -33,23 +33,31 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button 
-                size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-gold group"
+              <a 
+                href="https://www.linkedin.com/in/vinaytelukuntla"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <Linkedin className="mr-2 h-5 w-5" />
-                Let's Connect
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
+                <Button 
+                  size="lg" 
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-gold group"
+                >
+                  <Linkedin className="mr-2 h-5 w-5" />
+                  Let's Connect
+                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </a>
               
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
-              >
-                <Mail className="mr-2 h-5 w-5" />
-                Get in Touch
-              </Button>
+              <a href="#contact">
+                <Button 
+                  size="lg" 
+                  variant="outline" 
+                  className="border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10"
+                >
+                  <Mail className="mr-2 h-5 w-5" />
+                  Get in Touch
+                </Button>
+              </a>
             </div>
 
             {/* Stats */}

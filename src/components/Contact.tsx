@@ -38,7 +38,7 @@ const Contact = () => {
             </a>
 
             <a 
-              href="mailto:vinay@example.com"
+              href="mailto:vinay.telukuntla@example.com"
               className="block"
             >
               <Button 
